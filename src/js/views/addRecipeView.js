@@ -54,7 +54,6 @@ class AddRecipeView extends View {
         const ingredients = Object.entries(data)
           .filter(entry => entry[0].startsWith('ingredient') && entry[1] !== '')
           .map(ing => ing[1].split(',').map(el => el.trim()));
-        console.log(ingredients);
         if (!ingredients.every(el => el.length === 3))
           return alert('Wrong ingredient entry format!');
 

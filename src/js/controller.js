@@ -75,9 +75,8 @@ const controlAddBookmark = function () {
 };
 
 const controlLoadBookmarks = function () {
-  if (model.state.bookmarks.length > 0) {
+  if (model.state.bookmarks.length > 0)
     bookmarksView.render(model.state.bookmarks);
-  }
 };
 
 const controlAddRecipe = async function (newRecipe) {
@@ -116,11 +115,10 @@ const init = function () {
 init();
 
 window.addEventListener('beforeunload', function (e) {
-  e.preventDefault;
+  e.preventDefault();
   window.scrollTo(0, 0);
 });
 
 document.querySelector('.page__reload').addEventListener('click', function (e) {
-  window.location.hash = '';
-  location.reload();
+  window.location = '/';
 });

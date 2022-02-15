@@ -21,10 +21,10 @@ export default class View {
     this._data = data;
     const newMarkup = this._generateMarkup();
     const newDOM = document.createRange().createContextualFragment(newMarkup);
-    const newElemements = Array.from(newDOM.querySelectorAll('*'));
+    const newElements = Array.from(newDOM.querySelectorAll('*'));
     const curElements = Array.from(this._parentElement.querySelectorAll('*'));
 
-    newElemements.forEach((newEl, i) => {
+    newElements.forEach((newEl, i) => {
       const curEl = curElements[i];
 
       if (
