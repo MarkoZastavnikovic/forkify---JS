@@ -5,7 +5,7 @@
   "default": "controller.js",
   "scripts": {
     "start": "parcel index.html",
-    "build": "parcel build index.html --dist-dir ./distBuild"
+    "build": "parcel build index.html"
   },
   "author": "Marko",
   "license": "ISC",
