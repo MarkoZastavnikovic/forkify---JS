@@ -10,8 +10,6 @@ import bookmarksView from './views/bookmarksView.js';
 import addRecipeView from './views/addRecipeView.js';
 import { MODAL_CLOSE_SEC } from './config';
 
-// https://forkify-api.herokuapp.com/v2
-
 ///////////////////////////////////////
 
 ///////////FUNCTIONS///////////////
@@ -109,11 +107,10 @@ const init = function () {
 };
 init();
 
-window.addEventListener('beforeunload', function (e) {
-  e.preventDefault();
+window.addEventListener('beforeunload', function () {
   window.scrollTo(0, 0);
 });
 
-document.querySelector('.page__reload').addEventListener('click', function (e) {
+document.querySelector('.page__reload').addEventListener('click', function () {
   window.location = '/';
 });
