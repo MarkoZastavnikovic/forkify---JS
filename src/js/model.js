@@ -82,7 +82,7 @@ export const updateServings = function (newServings) {
 };
 
 const persistBookmarks = function () {
-  localStorage.setItem('bookmarks', JSON.stringify(state.bookmarks));
+  localStorage.setItem('bookmarksForkifyMarz', JSON.stringify(state.bookmarks));
 };
 
 export const addBookmark = function (recipe) {
@@ -99,7 +99,8 @@ export const deleteBookmark = function (id) {
 };
 
 export const resetBookmark = function () {
-  localStorage.removeItem('bookmarks');
+  localStorage.removeItem('bookmarksForkifyMarz');
+  location.reload();
 };
 
 export const uploadRecipe = async function (newRecipe) {
@@ -134,7 +135,7 @@ export const uploadRecipe = async function (newRecipe) {
 };
 
 const init = function () {
-  const storage = localStorage.getItem('bookmarks');
+  const storage = localStorage.getItem('bookmarksForkifyMarz');
   if (storage) state.bookmarks = JSON.parse(storage);
 };
 init();
