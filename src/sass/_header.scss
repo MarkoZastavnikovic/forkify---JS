@@ -5,6 +5,10 @@
   align-items: center;
   justify-content: space-between;
 
+  .page__reload {
+    cursor: pointer;
+  }
+
   &__logo {
     margin-left: 4rem;
     height: 4.6rem;
