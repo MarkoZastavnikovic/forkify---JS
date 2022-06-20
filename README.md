@@ -5,7 +5,7 @@ Recipe application with custom recipe uploads.
 Technologies used:
 
 - HTML
-- SASS
+- SCSS
 - JavaScript
 - Parcel
 - Babel
